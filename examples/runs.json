@@ -1,0 +1,1 @@
+{"runs":[{"workflow":"Unit tests","conclusion":"success","started_at":"2026-11-05T10:00:00Z","completed_at":"2026-11-05T10:02:30Z"},{"workflow":"Unit tests","conclusion":"failure","started_at":"2026-11-05T11:00:00Z","completed_at":"2026-11-05T11:01:30Z"},{"workflow":"Deploy","conclusion":"success","started_at":"2026-11-05T12:00:00Z","completed_at":"2026-11-05T12:05:00Z"}]}
