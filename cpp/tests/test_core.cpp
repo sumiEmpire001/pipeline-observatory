@@ -1,0 +1,3 @@
+#include "EmbeddedCore.h"
+#include <cassert>
+int main(){using namespace lord_sumi; PipelineHealth p;assert(p.ingest(0,10,RunStatus::Success));assert(p.ingest(10,30,RunStatus::Failure));auto s=p.snapshot();assert(s.total==2&&s.duration_ms==30&&s.failure==1);assert(!p.ingest(29,40,RunStatus::Success));assert(p.snapshot().fault);assert(!p.ingest(40,50,RunStatus::Success));p.reset();assert(p.ingest(0,1,RunStatus::Skipped));}
